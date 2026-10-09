@@ -3,14 +3,27 @@
  */
 
 package com.mycompany.sistemabancario;
-
+import Vista.VistaBanco;
 /**
  *
  * @author USUARIO
  */
 public class SistemaBancario {
-
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+               
+                VistaBanco vista = new VistaBanco();
+                
+              
+                vista.setLocationRelativeTo(null);
+                
+             
+                vista.setVisible(true);
+            }
+        });
     }
+    
+
 }
