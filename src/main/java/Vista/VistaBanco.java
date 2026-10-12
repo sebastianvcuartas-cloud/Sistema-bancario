@@ -217,7 +217,7 @@ public class VistaBanco extends javax.swing.JFrame {
         controlador.CrearCuentaAhorros(num, titular, d, m, a, saldo);
     } else {
         double sobregiro = Double.parseDouble(txtSobregiro.getText());
-        controlador.CrearCuentaCorriente(num, titular, d, m, a, saldo, sobregiro);
+        controlador.crearCuentaCorriente(num, titular, d, m, a, saldo, sobregiro);
     }
 
     txtResultado.setText("¡Cuenta creada exitosamente!\n\n" + controlador.consultarDatos(false));

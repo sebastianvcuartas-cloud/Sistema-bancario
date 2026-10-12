@@ -12,7 +12,7 @@ public abstract class Cuenta {
     private String NumeroCuenta;
     private String Titular;
     private Fecha FechaApertura;
-    private double Saldo;
+    public double Saldo;
 
     public Cuenta(String NumeroCuenta, String Titular, Fecha FechaApertura, double Saldo) {
         this.NumeroCuenta = NumeroCuenta;
